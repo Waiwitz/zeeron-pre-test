@@ -127,6 +127,7 @@ export const DataTable = () => {
             columns={columns}
             dataSource={users}
             scroll={{ x: "fit-content", y: "fit-content" }}
+            rowKey={(row) => row.id}
           />
         </Form>
       </Card>
